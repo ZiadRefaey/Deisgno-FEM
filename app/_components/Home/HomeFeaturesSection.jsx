@@ -36,7 +36,7 @@ const FeaturesList = [
 export default function HomeFeaturesSection() {
   return (
     <SectionWrapper className="relative flex flex-col items-center justify-center gap-20 md:gap-8 xl:gap-[30px] xl:flex-row">
-      <div className="absolute top-0m-auto w-[99vw] h-full -z-20 hidden xl:block">
+      <div className="absolute top-0  w-[99vw] h-full -z-20 hidden xl:block">
         <Image
           src={BgPatternLeaf}
           alt="Leaf Pattern"

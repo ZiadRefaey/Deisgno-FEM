@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jost.className} text-white`}>
+      <body className={`${jost.className} text-white overflow-x-hidden`}>
         <NavBar />
         <main className={` m-auto`}>{children}</main>
       </body>
