@@ -3,7 +3,6 @@ import PrimaryButton from "../PrimaryButton";
 import Image from "next/image";
 import Hero from "@/public/home/desktop/image-hero-phone-copy.png";
 import HeroPattern from "@/public/home/desktop/bg-pattern-hero-home.svg";
-import SectionWrapper from "../SectionWrapper";
 export default function HomeHero() {
   return (
     <>
