@@ -1,6 +1,7 @@
 import { Jost } from "next/font/google";
 import "./globals.css";
 import NavBar from "./_components/NavBar";
+import Footer from "./_components/Footer";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={`${jost.className} text-white overflow-x-hidden`}>
         <NavBar />
         <main className={` m-auto`}>{children}</main>
+        <Footer />
       </body>
     </html>
   );
