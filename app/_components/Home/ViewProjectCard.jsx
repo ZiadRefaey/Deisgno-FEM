@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
 import ResponsiveImage from "../ResponsiveImage";
+import Link from "next/link";
 
 export default function ViewProjectCard({
   desktopImage,
@@ -8,6 +9,7 @@ export default function ViewProjectCard({
   mobileImage,
   className,
   title,
+  href = "/",
 }) {
   return (
     <div className={`${className}`}>
@@ -18,7 +20,10 @@ export default function ViewProjectCard({
         alt={`${title}'s image`}
         className={"w-full h-full object-cover rounded-[15px]"}
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-black/60 rounded-[15px] flex flex-col items-center justify-center gap-6 hover:bg-peach/60 transition-all duration-300 cursor-pointer">
+      <Link
+        href={href}
+        className="absolute top-0 left-0 w-full h-full bg-black/60 rounded-[15px] flex flex-col items-center justify-center gap-6 hover:bg-peach/60 transition-all duration-300 cursor-pointer"
+      >
         <p className="text-MobileHeadingM md:text-headingM uppercase">
           {title}
         </p>
@@ -29,7 +34,7 @@ export default function ViewProjectCard({
           </p>
           <FaChevronRight className="w-2 h-3 text-peach" />
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

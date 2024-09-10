@@ -29,6 +29,7 @@ export default function ViewProjectsSection() {
         className={
           "w-full  h-[250px] md:h-[200px] xl:h-full relative xl:row-span-2"
         }
+        href="/web-design"
       />
 
       <ViewProjectCard
@@ -37,6 +38,7 @@ export default function ViewProjectsSection() {
         desktopImage={DesktopImageAppDesign}
         title={"app design"}
         className={"w-full h-[250px] md:h-[200px] xl:h-[308px] relative"}
+        href="/app-design"
       />
 
       <ViewProjectCard
@@ -45,6 +47,7 @@ export default function ViewProjectsSection() {
         desktopImage={DesktopImageGraphicDesign}
         title={"graphic design"}
         className={"w-full h-[250px] md:h-[200px] xl:h-[308px] relative"}
+        href="/graphic-design"
       />
     </SectionWrapper>
   );

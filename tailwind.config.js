@@ -16,6 +16,7 @@ module.exports = {
         "light-peach": "#ffad9b",
         "dark-gray": "#333136",
         "light-gray": "#f1f3f5",
+        beige: "#FDF3F0",
       },
       fontSize: {
         headingL: [
