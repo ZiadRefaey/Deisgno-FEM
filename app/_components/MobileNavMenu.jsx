@@ -10,9 +10,9 @@ export default function MobileNavMenu({ isActive }) {
           : "-translate-y-[calc(100%-96px)] opacity-0 hidden"
       } transition-all duration-300 md:hidden`}
     >
-      <MobileNavItem href={"/"}>our company</MobileNavItem>
-      <MobileNavItem href={"/"}>locations</MobileNavItem>
-      <MobileNavItem href={"/"}>Contact</MobileNavItem>
+      <MobileNavItem href={"/about"}>our company</MobileNavItem>
+      <MobileNavItem href={"/locations"}>locations</MobileNavItem>
+      <MobileNavItem href={"/contact"}>Contact</MobileNavItem>
     </ul>
   );
 }

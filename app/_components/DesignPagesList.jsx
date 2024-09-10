@@ -1,13 +1,6 @@
 import React from "react";
 import ViewProjectCard from "./Home/ViewProjectCard";
 
-import GraphicDesignImgMobile from "@/public/home/mobile/image-graphic-design.jpg";
-import GraphicDesignImgTablet from "@/public/home/tablet/image-graphic-design.jpg";
-import GraphicDesignImgDesktop from "@/public/home/mobile/image-graphic-design.jpg";
-
-import AppDesignImgMobile from "@/public/home/mobile/image-app-design.jpg";
-import AppDesignImgTablet from "@/public/home/tablet/image-app-design.jpg";
-import AppDesignImgDesktop from "@/public/home/mobile/image-app-design.jpg";
 import SectionWrapper from "./SectionWrapper";
 
 export default function DesignPagesList({ designPages }) {
