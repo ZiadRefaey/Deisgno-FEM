@@ -7,7 +7,17 @@ import ImagePhoton from "@/public/web-design/desktop/image-photon.jpg";
 import ImageBuilder from "@/public/web-design/desktop/image-builder.jpg";
 import ImageBlogr from "@/public/web-design/desktop/image-blogr.jpg";
 import ImageCamp from "@/public/web-design/desktop/image-camp.jpg";
+
+import GraphicDesignImgMobile from "@/public/home/mobile/image-graphic-design.jpg";
+import GraphicDesignImgTablet from "@/public/home/tablet/image-graphic-design.jpg";
+import GraphicDesignImgDesktop from "@/public/home/mobile/image-graphic-design.jpg";
+
+import AppDesignImgMobile from "@/public/home/mobile/image-app-design.jpg";
+import AppDesignImgTablet from "@/public/home/tablet/image-app-design.jpg";
+import AppDesignImgDesktop from "@/public/home/mobile/image-app-design.jpg";
+
 import ProjectsList from "../_components/ProjectsList";
+import DesignPagesList from "../_components/DesignPagesList";
 
 const WebDesignProjects = [
   {
@@ -44,6 +54,22 @@ const WebDesignProjects = [
     image: ImageCamp,
   },
 ];
+const designPages = [
+  {
+    desktopImage: AppDesignImgDesktop,
+    tabletImage: AppDesignImgTablet,
+    mobileImage: AppDesignImgMobile,
+    title: "App Design",
+    href: "/app-design",
+  },
+  {
+    desktopImage: GraphicDesignImgDesktop,
+    tabletImage: GraphicDesignImgTablet,
+    mobileImage: GraphicDesignImgMobile,
+    title: "Graphic Design",
+    href: "/graphic-design",
+  },
+];
 export default function WebDesign() {
   return (
     <>
@@ -54,6 +80,7 @@ export default function WebDesign() {
         }
       />
       <ProjectsList projects={WebDesignProjects} />
+      <DesignPagesList designPages={designPages} />
     </>
   );
 }
