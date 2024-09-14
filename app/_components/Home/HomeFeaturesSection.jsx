@@ -1,11 +1,10 @@
 import IllustrationFriendly from "@/public/home/desktop/illustration-friendly.svg";
 import IllustrationPassionate from "@/public/home/desktop/illustration-passionate.svg";
 import IllustrationResourceful from "@/public/home/desktop/illustration-resourceful.svg";
-import BgPatternLeaf from "@/public/shared/desktop/bg-pattern-leaf.svg";
 
 import FeaturedCard from "./FeaturedCard";
 import SectionWrapper from "../SectionWrapper";
-import Image from "next/image";
+import LeafPattern from "../LeafPattern";
 const FeaturesList = [
   {
     illustration: IllustrationPassionate,
@@ -37,11 +36,7 @@ export default function HomeFeaturesSection() {
   return (
     <SectionWrapper className="relative flex flex-col items-center justify-center gap-20 md:gap-8 xl:gap-[30px] xl:flex-row">
       <div className="absolute top-0  w-[99vw] h-full -z-20 hidden xl:block">
-        <Image
-          src={BgPatternLeaf}
-          alt="Leaf Pattern"
-          className="absolute right-0 top-[124px] rotate-180"
-        ></Image>
+        <LeafPattern className={" right-0 top-[124px] rotate-180"} />
       </div>
       {FeaturesList.map((feature, index) => (
         <FeaturedCard
