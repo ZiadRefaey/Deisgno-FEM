@@ -14,7 +14,7 @@ const AboutUsHeaderData = {
   patternTablet: BgPatternDesktop,
   patternDesktop: BgPatternDesktop,
   fullWidthMobile: true,
-  imageWdith: "476",
+  gridCols: "xl:grid-cols-[1fr,476px]",
   imageSize: "w-full h-[320px] xl:w-[475px] xl:h-full",
   imageOrder: "xl:order-2",
   bgColor: "bg-peach ",
@@ -38,7 +38,7 @@ export default function AboutUsHeader() {
       patternTablet={AboutUsHeaderData.patternTablet}
       patternDesktop={AboutUsHeaderData.patternDesktop}
       fullWidthMobile={AboutUsHeaderData.fullWidthMobile}
-      imageWdith={AboutUsHeaderData.imageWdith}
+      gridCols={AboutUsHeaderData.gridCols}
       imageSize={AboutUsHeaderData.imageSize}
       imageOrder={AboutUsHeaderData.imageOrder}
       bgColor={AboutUsHeaderData.bgColor}

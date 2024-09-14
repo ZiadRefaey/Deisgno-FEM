@@ -9,7 +9,7 @@ export default function AboutSplitSection({
   patternMobile,
   patternTablet,
   patternDesktop,
-  imageWdith,
+  gridCols,
   fullWidthMobile,
   imageSize,
   imageOrder,
@@ -23,7 +23,7 @@ export default function AboutSplitSection({
 }) {
   return (
     <SectionWrapper
-      className={`grid grid-cols-1 xl:grid-cols-[1fr,${imageWdith}px] md:rounded-[15px] overflow-hidden`}
+      className={`grid grid-cols-1 ${gridCols} md:rounded-[15px] overflow-hidden`}
       fullWidthMobile={fullWidthMobile}
     >
       <div className={`relative ${imageSize} ${imageOrder}`}>
@@ -35,7 +35,7 @@ export default function AboutSplitSection({
         />
       </div>
       <div
-        className={`px-6 py-20 relative ${bgColor} text-white text-center xl:text-start md:px-[58px] md:py-[64px] xl:py-[135px] xl:px-[95px] overflow-hidden`}
+        className={`px-6 py-20 relative ${bgColor} text-white text-center xl:text-start md:px-[58px] md:py-[64px] xl:py-[135px] flex items-center xl:items-start justify-center flex-col xl:px-[95px] overflow-hidden`}
       >
         <div className={`absolute ${patternSize} ${patternPositions}`}>
           <ResponsiveImage
