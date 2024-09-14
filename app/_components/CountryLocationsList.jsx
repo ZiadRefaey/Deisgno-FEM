@@ -14,13 +14,13 @@ const LocationsList = [
   {
     title: "Australia",
     illustration: AustraliaIllustration,
-    rotation: "rotate-0",
+    rotation: "-rotate-45",
     dimensions: "w-[182px] h-[93px]",
   },
   {
     title: "United Kingdom",
     illustration: UKIllustration,
-    rotation: "rotate-0",
+    rotation: "rotate-180",
     dimensions: "w-[181px] h-[108px]",
   },
 ];
@@ -31,7 +31,7 @@ export default function CountryLocationsList() {
         <CountryLocationCard
           key={Location.title}
           title={Location.title}
-          rotaion={Location.rotation}
+          rotation={Location.rotation}
           dimensions={Location.dimensions}
           illustration={Location.illustration}
         />
