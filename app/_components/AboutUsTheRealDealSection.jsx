@@ -1,9 +1,10 @@
-import ImageMobile from "@/public/about/mobile/image-world-class-talent.jpg";
-import ImageTablet from "@/public/about/tablet/image-world-class-talent.jpg";
-import ImageDesktop from "@/public/about/desktop/image-world-class-talent.jpg";
+import AboutSplitSection from "./AboutSplitSection";
+
+import ImageMobile from "@/public/about/mobile/image-real-deal.jpg";
+import ImageTablet from "@/public/about/tablet/image-real-deal.jpg";
+import ImageDesktop from "@/public/about/desktop/image-real-deal.jpg";
 
 import Pattern from "@/public/shared/desktop/bg-pattern-three-circles.svg";
-import AboutSplitSection from "./AboutSplitSection";
 
 const WorldClassTalentData = {
   imageMobile: ImageMobile,
@@ -13,21 +14,21 @@ const WorldClassTalentData = {
   patternTablet: Pattern,
   patternDesktop: Pattern,
   fullWidthMobile: true,
-  gridCols: "xl:grid-cols-[475px,1fr]",
+  gridCols: "xl:grid-cols-[1fr,475px]",
   imageSize: "w-full h-[320px] xl:w-[475px] xl:h-[650px]",
-  imageOrder: "",
+  imageOrder: "xl:order-2",
   bgColor: "bg-beige",
   patternPositions:
-    "top-0 left-0  md:left-[94px] md:top-auto md:bottom-[336px] xl:bottom-0 xl:left-[-146px]",
+    "top-0 left-0  md:left-[94px] md:top-auto md:bottom-[44px] xl:bottom-0 xl:left-0",
   patternSize: "h-[584px] w-[584px]",
   titleColor: "text-peach",
-  title: "World-class talent",
+  title: "The real deal",
   paragraph:
-    "We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms.Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.",
+    "As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success. We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.",
   paragraphColor: "text-black",
 };
 
-export default function AboutUsWorldClassTalent() {
+export default function AboutUsTheRealDealSection() {
   return (
     <AboutSplitSection
       imageMobile={WorldClassTalentData.imageMobile}
